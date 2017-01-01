@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Clase 19, JSON</title>
+  </head>
+  <body>
+    <script>
+      // Lo usamos para crear objetos
+      // JSON => Javascript Object Notation
+      // Diccionarios / Hashes
+      var arreglos = [1,2,3,4];
+
+      //Cada uno de los elementos tiene una clave
+      var curso = {
+        titulo: "Curso javaScript",
+        videos: 19,
+        tutor: "Uriel",
+        introduccion: function(){
+          console.log("Bienvenido al curso: "+ this.titulo+ " que tiene " + this.videos+" videos")
+        },
+        otra_function: function(){
+          console.log("Esta es otra función")
+        }
+      };
+
+      console.log(curso.introduccion());
+      console.log(curso.otra_function());
+    </script>
+  </body>
+</html>
