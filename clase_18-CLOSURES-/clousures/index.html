@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Clase 18</title>
+  </head>
+  <body>
+    <button id="btn"> Click</button>
+    <script>
+
+      (function(){
+
+        document.getElementById('btn').addEventListener("click", function(){
+          console.log("Hizo click en mi");
+        });
+
+        setTimeout(function(){
+          console.log(hola_mundo("Cristian"));
+        },2000)
+
+      })();
+
+      function hola_mundo(nombre){
+        function construct(){
+          nombre = "Angela";
+          console.log("Hola " + nombre);
+        }
+        construct();
+        console.log(nombre);
+      }
+
+    </script>
+  </body>
+</html>
